@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(to bottom, #800020, #f5f5dc); /* Burgundy to Cream Gradient */
+  color: #f5f5dc; /* Cream Text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 1200px;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Left Section */
+.left-section {
+  width: 30%;
+  background: #f5f5dc; /* Cream Background */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: #800020; /* Burgundy Text */
+}
+
+.left-section h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.device-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.device-item {
+  width: calc(50% - 10px);
+  background: #800020; /* Burgundy Background */
+  color: #f5f5dc; /* Cream Text */
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 0.9rem;
+}
+
+.device-item input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  accent-color: #f5f5dc;
+}
+
+.device-item label {
+  font-weight: bold;
+}
+
+#select-all-devices {
+  transform: scale(1.2);
+  margin-right: 10px;
+  accent-color: #800020;
+}
+
+.left-section div label {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Right Section */
+.right-section {
+  width: 65%;
+  background: #800020; /* Burgundy Background */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: #f5f5dc; /* Cream Text */
+}
+
+.right-section h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.group-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.group-box {
+  background: #f5f5dc; /* Cream Background */
+  color: #800020; /* Burgundy Text */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: calc(50% - 10px);
+}
+
+.create-group-button {
+  background: #f5f5dc; /* Cream Background */
+  color: #800020; /* Burgundy Text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+}
+
+.create-group-button:hover {
+  transform: scale(1.05);
+  background: #e0d9c5; /* Slightly darker cream */
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #f5f5dc; /* Cream Background */
+  border-radius: 15px;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modal-content h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #800020; /* Burgundy Text */
+}
+
+.modal-content input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #800020; /* Burgundy Border */
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.modal-content ul li {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.modal-content button {
+  background: #800020; /* Burgundy Background */
+  color: #f5f5dc; /* Cream Text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.modal-content button:hover {
+  transform: scale(1.05);
+  background: #5a0014; /* Darker Burgundy */
+}
+
+.modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #800020; /* Burgundy */
+  cursor: pointer;
+}
+
+.modal-content .close:hover {
+  color: #5a0014; /* Darker Burgundy */
+}
